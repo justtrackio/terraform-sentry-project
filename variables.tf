@@ -6,6 +6,7 @@ variable "base_url" {
 variable "organization_slug" {
   type        = string
   description = "The unique URL slug for this organization."
+  default     = "sentry"
 }
 
 variable "token" {
