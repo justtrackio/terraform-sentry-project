@@ -9,14 +9,6 @@ resource "sentry_issue_alert" "default" {
 
   conditions = [
     {
-      id   = "sentry.rules.conditions.first_seen_event.FirstSeenEventCondition"
-      name = "A new issue is created"
-    },
-    {
-      id   = "sentry.rules.conditions.regression_event.RegressionEventCondition"
-      name = "The issue changes state from resolved to unresolved"
-    },
-    {
       id             = "sentry.rules.conditions.event_frequency.EventFrequencyCondition"
       name           = "The issue is seen more than 200 times in 1h"
       value          = 200
@@ -63,20 +55,6 @@ resource "sentry_issue_alert" "default" {
       name = "The event is from the latest release"
     },
     {
-      id        = "sentry.rules.filters.event_attribute.EventAttributeFilter"
-      name      = "The event's message value contains test"
-      attribute = "message"
-      match     = "co"
-      value     = "test"
-    },
-    {
-      id    = "sentry.rules.filters.tagged_event.TaggedEventFilter"
-      name  = "The event's tags match test contains test"
-      key   = "test"
-      match = "co"
-      value = "test"
-    },
-    {
       id    = "sentry.rules.filters.level.LevelFilter"
       name  = "The event's level is equal to fatal"
       match = "eq"
@@ -85,18 +63,6 @@ resource "sentry_issue_alert" "default" {
   ]
 
   actions = [
-    {
-      id               = "sentry.mail.actions.NotifyEmailAction"
-      name             = "Send a notification to IssueOwners"
-      targetType       = "IssueOwners"
-      targetIdentifier = ""
-    },
-    {
-      id               = "sentry.mail.actions.NotifyEmailAction"
-      name             = "Send a notification to Team"
-      targetType       = "Team"
-      targetIdentifier = sentry_team.default.team_id
-    },
     {
       id   = "sentry.rules.actions.notify_event.NotifyEventAction"
       name = "Send a notification (for all legacy integrations)"
