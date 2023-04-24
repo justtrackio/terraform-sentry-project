@@ -82,11 +82,6 @@ resource "sentry_metric_alert" "default" {
   resolve_threshold = 0
 
   trigger {
-    action {
-      type              = "email"
-      target_type       = "team"
-      target_identifier = sentry_team.default.team_id
-    }
     alert_threshold = 300
     label           = "critical"
     threshold_type  = 0
