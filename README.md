@@ -25,12 +25,10 @@ Terraform module which creates a sentry project
 
 | Name | Type |
 |------|------|
-| [sentry_issue_alert.default](https://registry.terraform.io/providers/jianyuan/sentry/0.11.2/docs/resources/issue_alert) | resource |
-| [sentry_metric_alert.default](https://registry.terraform.io/providers/jianyuan/sentry/0.11.2/docs/resources/metric_alert) | resource |
 | [sentry_project.default](https://registry.terraform.io/providers/jianyuan/sentry/0.11.2/docs/resources/project) | resource |
-| [sentry_team.default](https://registry.terraform.io/providers/jianyuan/sentry/0.11.2/docs/resources/team) | resource |
 | [sentry_key.default](https://registry.terraform.io/providers/jianyuan/sentry/0.11.2/docs/data-sources/key) | data source |
 | [sentry_organization.default](https://registry.terraform.io/providers/jianyuan/sentry/0.11.2/docs/data-sources/organization) | data source |
+| [sentry_team.default](https://registry.terraform.io/providers/jianyuan/sentry/0.11.2/docs/data-sources/team) | data source |
 
 ## Inputs
 
@@ -57,6 +55,7 @@ Terraform module which creates a sentry project
 | <a name="input_resolve_age"></a> [resolve\_age](#input\_resolve\_age) | Hours in which an issue is automatically resolve if not seen after this amount of time. | `number` | `720` | no |
 | <a name="input_stage"></a> [stage](#input\_stage) | ID element. Usually used to indicate role, e.g. 'prod', 'staging', 'source', 'build', 'test', 'deploy', 'release' | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Additional tags (e.g. `{'BusinessUnit': 'XYZ'}`).<br>Neither the tag keys nor the tag values will be modified by this module. | `map(string)` | `{}` | no |
+| <a name="input_team_slug"></a> [team\_slug](#input\_team\_slug) | The unique team slug. | `string` | `"sentry"` | no |
 | <a name="input_tenant"></a> [tenant](#input\_tenant) | ID element \_(Rarely used, not included by default)\_. A customer identifier, indicating who this instance of a resource is for | `string` | `null` | no |
 | <a name="input_token"></a> [token](#input\_token) | The authentication token used to connect to Sentry. | `string` | n/a | yes |
 

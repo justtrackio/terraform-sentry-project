@@ -9,6 +9,12 @@ variable "organization_slug" {
   default     = "sentry"
 }
 
+variable "team_slug" {
+  type        = string
+  description = "The unique team slug."
+  default     = "sentry"
+}
+
 variable "token" {
   type        = string
   description = "The authentication token used to connect to Sentry."
