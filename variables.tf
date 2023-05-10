@@ -9,17 +9,6 @@ variable "organization_slug" {
   default     = "sentry"
 }
 
-variable "team_slug" {
-  type        = string
-  description = "The unique team slug."
-  default     = "sentry"
-}
-
-variable "token" {
-  type        = string
-  description = "The authentication token used to connect to Sentry."
-}
-
 variable "platform" {
   type        = string
   description = "The optional platform for this project."
@@ -30,4 +19,15 @@ variable "resolve_age" {
   type        = number
   description = "Hours in which an issue is automatically resolve if not seen after this amount of time."
   default     = 720
+}
+
+variable "team_slug" {
+  type        = string
+  description = "The unique team slug."
+  default     = "sentry"
+}
+
+variable "token" {
+  type        = string
+  description = "The authentication token used to connect to Sentry."
 }
