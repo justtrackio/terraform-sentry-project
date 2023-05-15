@@ -21,6 +21,12 @@ variable "resolve_age" {
   default     = 720
 }
 
+variable "team_slug" {
+  type        = string
+  description = "The unique team slug."
+  default     = "sentry"
+}
+
 variable "token" {
   type        = string
   description = "The authentication token used to connect to Sentry."

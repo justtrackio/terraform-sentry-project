@@ -1,13 +1,7 @@
-resource "sentry_team" "default" {
+resource "sentry_project" "default" {
   organization = data.sentry_organization.default.id
 
-  name = module.this.id
-}
-
-resource "sentry_project" "default" {
-  organization = sentry_team.default.organization
-
-  teams = [sentry_team.default.name]
+  teams = [data.sentry_team.default.id]
   name  = module.this.id
 
   platform    = var.platform
