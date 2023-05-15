@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/justtrackio/terraform-sentry-project/compare/v1.0.1...v1.1.0) (2023-05-15)
+
+
+### Features
+
+* remove_non_essential_part ([#6](https://github.com/justtrackio/terraform-sentry-project/issues/6)) ([8111a21](https://github.com/justtrackio/terraform-sentry-project/commit/8111a211dbdec809500ed6d8d1a06f594030fd3d))
+
 ## [1.0.1](https://github.com/justtrackio/terraform-sentry-project/compare/v1.0.0...v1.0.1) (2023-05-15)
 
 
