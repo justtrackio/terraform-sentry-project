@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/justtrackio/terraform-sentry-project/compare/v1.1.0...v1.1.1) (2023-05-17)
+
+
+### Bug Fixes
+
+* add_slug_for_data_object_usage ([#10](https://github.com/justtrackio/terraform-sentry-project/issues/10)) ([c3c81b4](https://github.com/justtrackio/terraform-sentry-project/commit/c3c81b47d1c177ae4aea8b87b886097f182e2587))
+
 ## [1.1.0](https://github.com/justtrackio/terraform-sentry-project/compare/v1.0.1...v1.1.0) (2023-05-15)
 
 
