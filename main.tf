@@ -3,6 +3,7 @@ resource "sentry_project" "default" {
 
   teams = [data.sentry_team.default.id]
   name  = module.this.id
+  slug  = module.this.id
 
   platform    = var.platform
   resolve_age = var.resolve_age
