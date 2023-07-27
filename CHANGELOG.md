@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/justtrackio/terraform-sentry-project/compare/v1.1.1...v1.2.0) (2023-07-27)
+
+
+### Features
+
+* add sentry key resource ([#15](https://github.com/justtrackio/terraform-sentry-project/issues/15)) ([1008865](https://github.com/justtrackio/terraform-sentry-project/commit/10088653b7b3cf8aaeba47127c0405b1aff30032))
+
 ## [1.1.1](https://github.com/justtrackio/terraform-sentry-project/compare/v1.1.0...v1.1.1) (2023-05-17)
 
 
