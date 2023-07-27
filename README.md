@@ -25,8 +25,8 @@ Terraform module which creates a sentry project
 
 | Name | Type |
 |------|------|
+| [sentry_key.default](https://registry.terraform.io/providers/jianyuan/sentry/0.11.2/docs/resources/key) | resource |
 | [sentry_project.default](https://registry.terraform.io/providers/jianyuan/sentry/0.11.2/docs/resources/project) | resource |
-| [sentry_key.default](https://registry.terraform.io/providers/jianyuan/sentry/0.11.2/docs/data-sources/key) | data source |
 | [sentry_organization.default](https://registry.terraform.io/providers/jianyuan/sentry/0.11.2/docs/data-sources/organization) | data source |
 | [sentry_team.default](https://registry.terraform.io/providers/jianyuan/sentry/0.11.2/docs/data-sources/team) | data source |
 
@@ -54,6 +54,8 @@ Terraform module which creates a sentry project
 | <a name="input_organization_slug"></a> [organization\_slug](#input\_organization\_slug) | The unique URL slug for this organization. | `string` | `"sentry"` | no |
 | <a name="input_organizational_unit"></a> [organizational\_unit](#input\_organizational\_unit) | Usually used to indicate the AWS organizational unit, e.g. 'prod', 'sdlc' | `string` | `null` | no |
 | <a name="input_platform"></a> [platform](#input\_platform) | The optional platform for this project. | `string` | `"go"` | no |
+| <a name="input_rate_limit_count"></a> [rate\_limit\_count](#input\_rate\_limit\_count) | Number of events that can be reported within the rate limit window. | `number` | `100` | no |
+| <a name="input_rate_limit_window"></a> [rate\_limit\_window](#input\_rate\_limit\_window) | Length of time that will be considered when checking the rate limit. | `number` | `60` | no |
 | <a name="input_regex_replace_chars"></a> [regex\_replace\_chars](#input\_regex\_replace\_chars) | Terraform regular expression (regex) string.<br>Characters matching the regex will be removed from the ID elements.<br>If not set, `"/[^a-zA-Z0-9-]/"` is used to remove all characters other than hyphens, letters and digits. | `string` | `null` | no |
 | <a name="input_resolve_age"></a> [resolve\_age](#input\_resolve\_age) | Hours in which an issue is automatically resolve if not seen after this amount of time. | `number` | `720` | no |
 | <a name="input_stage"></a> [stage](#input\_stage) | ID element. Usually used to indicate role, e.g. 'prod', 'staging', 'source', 'build', 'test', 'deploy', 'release' | `string` | `null` | no |
