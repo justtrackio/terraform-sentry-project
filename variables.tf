@@ -1,8 +1,3 @@
-variable "base_url" {
-  type        = string
-  description = "The target Sentry Base API URL in the format https://[hostname]/api/. The default value is https://sentry.io/api/. The value must be provided when working with Sentry On-Premise."
-}
-
 variable "organization_slug" {
   type        = string
   description = "The unique URL slug for this organization."
@@ -37,9 +32,4 @@ variable "team_slug" {
   type        = string
   description = "The unique team slug."
   default     = "sentry"
-}
-
-variable "token" {
-  type        = string
-  description = "The authentication token used to connect to Sentry."
 }
