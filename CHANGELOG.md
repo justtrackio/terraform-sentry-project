@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/justtrackio/terraform-sentry-project/compare/v1.2.0...v1.3.0) (2023-08-17)
+
+
+### Features
+
+* remove-provider-for-count-usage ([#16](https://github.com/justtrackio/terraform-sentry-project/issues/16)) ([03603e2](https://github.com/justtrackio/terraform-sentry-project/commit/03603e2715afa8ae0079a4ff370e6c2de4b4378b))
+
 ## [1.2.0](https://github.com/justtrackio/terraform-sentry-project/compare/v1.1.1...v1.2.0) (2023-07-27)
 
 
