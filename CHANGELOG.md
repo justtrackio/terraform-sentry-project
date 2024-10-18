@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/justtrackio/terraform-sentry-project/compare/v1.3.0...v1.4.0) (2024-10-18)
+
+
+### Features
+
+* add issue alert and webhook ([#58](https://github.com/justtrackio/terraform-sentry-project/issues/58)) ([8c61387](https://github.com/justtrackio/terraform-sentry-project/commit/8c613879d77a6473cc59b2f50ae595b225c334e6))
+
 ## [1.3.0](https://github.com/justtrackio/terraform-sentry-project/compare/v1.2.0...v1.3.0) (2023-08-17)
 
 
