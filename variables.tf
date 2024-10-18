@@ -1,18 +1,18 @@
 variable "alarm_actions" {
   type        = string
-  default     = ""
+  default     = "[]"
   description = "List of actions. In JSON string format."
 }
 
 variable "alarm_action_match" {
   type        = string
-  default     = ""
+  default     = "any"
   description = "Trigger actions when an event is captured by Sentry and `any` or `all` of the specified conditions happen."
 }
 
 variable "alarm_conditions" {
   type        = string
-  default     = ""
+  default     = "[]"
   description = "List of conditions. In JSON string format."
 }
 
@@ -24,19 +24,19 @@ variable "alarm_enabled" {
 
 variable "alarm_filters" {
   type        = string
-  default     = ""
+  default     = null
   description = "A list of filters that determine if a rule fires after the necessary conditions have been met. In JSON string format."
 }
 
 variable "alarm_filter_match" {
   type        = string
-  default     = ""
+  default     = null
   description = "A string determining which filters need to be true before any actions take place. Required when a value is provided for filters."
 }
 
 variable "alarm_frequency" {
   type        = number
-  default     = null
+  default     = 5
   description = "Perform actions at most once every X minutes for this issue."
 }
 

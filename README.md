@@ -37,13 +37,13 @@ Terraform module which creates a sentry project
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_additional_tag_map"></a> [additional\_tag\_map](#input\_additional\_tag\_map) | Additional key-value pairs to add to each map in `tags_as_list_of_maps`. Not added to `tags` or `id`.<br/>This is for some rare cases where resources want additional configuration of tags<br/>and therefore take a list of maps with tag key, value, and additional configuration. | `map(string)` | `{}` | no |
-| <a name="input_alarm_action_match"></a> [alarm\_action\_match](#input\_alarm\_action\_match) | Trigger actions when an event is captured by Sentry and `any` or `all` of the specified conditions happen. | `string` | `""` | no |
-| <a name="input_alarm_actions"></a> [alarm\_actions](#input\_alarm\_actions) | List of actions. In JSON string format. | `string` | `""` | no |
-| <a name="input_alarm_conditions"></a> [alarm\_conditions](#input\_alarm\_conditions) | List of conditions. In JSON string format. | `string` | `""` | no |
+| <a name="input_alarm_action_match"></a> [alarm\_action\_match](#input\_alarm\_action\_match) | Trigger actions when an event is captured by Sentry and `any` or `all` of the specified conditions happen. | `string` | `"any"` | no |
+| <a name="input_alarm_actions"></a> [alarm\_actions](#input\_alarm\_actions) | List of actions. In JSON string format. | `string` | `"[]"` | no |
+| <a name="input_alarm_conditions"></a> [alarm\_conditions](#input\_alarm\_conditions) | List of conditions. In JSON string format. | `string` | `"[]"` | no |
 | <a name="input_alarm_enabled"></a> [alarm\_enabled](#input\_alarm\_enabled) | Defines if alarms should be created | `bool` | `true` | no |
-| <a name="input_alarm_filter_match"></a> [alarm\_filter\_match](#input\_alarm\_filter\_match) | A string determining which filters need to be true before any actions take place. Required when a value is provided for filters. | `string` | `""` | no |
-| <a name="input_alarm_filters"></a> [alarm\_filters](#input\_alarm\_filters) | A list of filters that determine if a rule fires after the necessary conditions have been met. In JSON string format. | `string` | `""` | no |
-| <a name="input_alarm_frequency"></a> [alarm\_frequency](#input\_alarm\_frequency) | Perform actions at most once every X minutes for this issue. | `number` | `null` | no |
+| <a name="input_alarm_filter_match"></a> [alarm\_filter\_match](#input\_alarm\_filter\_match) | A string determining which filters need to be true before any actions take place. Required when a value is provided for filters. | `string` | `null` | no |
+| <a name="input_alarm_filters"></a> [alarm\_filters](#input\_alarm\_filters) | A list of filters that determine if a rule fires after the necessary conditions have been met. In JSON string format. | `string` | `null` | no |
+| <a name="input_alarm_frequency"></a> [alarm\_frequency](#input\_alarm\_frequency) | Perform actions at most once every X minutes for this issue. | `number` | `5` | no |
 | <a name="input_attributes"></a> [attributes](#input\_attributes) | ID element. Additional attributes (e.g. `workers` or `cluster`) to add to `id`,<br/>in the order they appear in the list. New attributes are appended to the<br/>end of the list. The elements of the list are joined by the `delimiter`<br/>and treated as a single ID element. | `list(string)` | `[]` | no |
 | <a name="input_aws_account_id"></a> [aws\_account\_id](#input\_aws\_account\_id) | AWS account id | `string` | `null` | no |
 | <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | AWS region | `string` | `null` | no |
