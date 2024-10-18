@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/justtrackio/terraform-sentry-project/compare/v1.4.0...v1.4.1) (2024-10-18)
+
+
+### Bug Fixes
+
+* adjust alert vars ([#59](https://github.com/justtrackio/terraform-sentry-project/issues/59)) ([1acf162](https://github.com/justtrackio/terraform-sentry-project/commit/1acf16209aa805eac1c8441114efdc1739b96b5c))
+
 ## [1.4.0](https://github.com/justtrackio/terraform-sentry-project/compare/v1.3.0...v1.4.0) (2024-10-18)
 
 
