@@ -43,4 +43,8 @@ resource "sentry_issue_alert" "default" {
   filters      = var.alarm_filters
   filter_match = var.alarm_filter_match
   frequency    = var.alarm_frequency
+
+  depends_on = [
+    sentry_plugin.webhook
+  ]
 }
