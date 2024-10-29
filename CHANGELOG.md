@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/justtrackio/terraform-sentry-project/compare/v1.4.1...v1.4.2) (2024-10-29)
+
+
+### Bug Fixes
+
+* make alerts depend on webhook ([#60](https://github.com/justtrackio/terraform-sentry-project/issues/60)) ([63b3bb6](https://github.com/justtrackio/terraform-sentry-project/commit/63b3bb6aa50e2abd4302a717e8cc853468e32c33))
+
 ## [1.4.1](https://github.com/justtrackio/terraform-sentry-project/compare/v1.4.0...v1.4.1) (2024-10-18)
 
 
